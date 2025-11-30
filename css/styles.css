@@ -165,13 +165,13 @@ header{
     display: block;
   }
 
-  .contacts-list {
+  .address-list {
     display: flex;
     flex-direction: column;
     gap: 12px;
   }
 
-  .contacts-link {
+  .address-link {
     display: block;
     font-size: 12px;
     line-height: 1.17;
@@ -191,7 +191,7 @@ header{
   .nav-link:hover::after,
   .nav-link:focus::after,
   .nav-link.current::after {
-    opacity: 1;
+   opacity: 1;
   }
 }
 
@@ -200,13 +200,13 @@ header{
     margin-right: 76px;
   }
 
-  .contacts-list {
+  .address-list {
     flex-direction: row;
     align-items: center;
     gap: 40px;
   }
 
-  .contacts-link {
+  .address-link {
     padding: 24px 0;
     font-size: 16px;
     line-height: 1.5;
@@ -311,7 +311,40 @@ header{
   color: #4d5ae5;
 }
 
-.icon-list.menu-social {
+.social-icon-list{
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.icon-list-item{
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+.social-icon-link{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #f4f4fd;
+}
+
+.social-icon-link:hover,
+.social-icon-link:focus {
+  background-color: #404bbf;
+}
+
+.social-icon {
+  fill: #f4f4fd;
+}
+
+.social-icon-list.menu-social {
   gap: 40px;
   margin-top: 48px;
 }
